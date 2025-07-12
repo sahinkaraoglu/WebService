@@ -32,10 +32,13 @@ C:\Users\admin\Documents\GitHub\WebService\obj\Debug\net9.0\staticwebassets.buil
 C:\Users\admin\Documents\GitHub\WebService\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\admin\Documents\GitHub\WebService\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\admin\Documents\GitHub\WebService\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-C:\Users\admin\Documents\GitHub\WebService\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\admin\Documents\GitHub\WebService\obj\Debug\net9.0\WeatherS.CB217A36.Up2Date
 C:\Users\admin\Documents\GitHub\WebService\obj\Debug\net9.0\WeatherService.dll
 C:\Users\admin\Documents\GitHub\WebService\obj\Debug\net9.0\refint\WeatherService.dll
 C:\Users\admin\Documents\GitHub\WebService\obj\Debug\net9.0\WeatherService.pdb
 C:\Users\admin\Documents\GitHub\WebService\obj\Debug\net9.0\WeatherService.genruntimeconfig.cache
 C:\Users\admin\Documents\GitHub\WebService\obj\Debug\net9.0\ref\WeatherService.dll
+C:\Users\admin\Documents\GitHub\WebService\obj\Debug\net9.0\WeatherService.sourcelink.json
+C:\Users\admin\Documents\GitHub\WebService\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\admin\Documents\GitHub\WebService\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\admin\Documents\GitHub\WebService\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
