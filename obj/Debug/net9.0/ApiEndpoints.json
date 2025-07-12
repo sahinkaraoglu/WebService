@@ -1,6 +1,47 @@
 [
   {
     "ContainingType": "WeatherService.Controllers.WeatherController",
+    "Method": "GetAllCities",
+    "RelativePath": "api/Weather/cities",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "countryCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "searchTerm",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WeatherService.Models.CitiesResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WeatherService.Controllers.WeatherController",
     "Method": "GetWeatherByCity",
     "RelativePath": "api/Weather/city/{city}",
     "HttpMethod": "GET",

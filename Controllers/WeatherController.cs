@@ -144,6 +144,42 @@ namespace WeatherService.Controllers
         }
 
         /// <summary>
+        /// Tüm şehirlerin bilgilerini getirir
+        /// </summary>
+        /// <param name="page">Sayfa numarası (varsayılan: 1)</param>
+        /// <param name="pageSize">Sayfa başına şehir sayısı (varsayılan: 50)</param>
+        /// <param name="countryCode">Ülke kodu ile filtreleme (opsiyonel)</param>
+        /// <param name="searchTerm">Arama terimi ile filtreleme (opsiyonel)</param>
+        /// <returns>Şehir listesi</returns>
+        [HttpGet("cities")]
+        public async Task<ActionResult<CitiesResponse>> GetAllCities(
+            [FromQuery] int page = 1,
+            [FromQuery] int pageSize = 50,
+            [FromQuery] string? countryCode = null,
+            [FromQuery] string? searchTerm = null)
+        {
+            try
+            {
+                if (page < 1)
+                {
+                    return BadRequest("Sayfa numarası 1'den küçük olamaz.");
+                }
+
+                if (pageSize < 1 || pageSize > 100)
+                {
+                    return BadRequest("Sayfa boyutu 1 ile 100 arasında olmalıdır.");
+                }
+
+                var cities = await _weatherService.GetAllCitiesAsync(page, pageSize, countryCode, searchTerm);
+                return Ok(cities);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Bir hata oluştu: {ex.Message}");
+            }
+        }
+
+        /// <summary>
         /// Genel hava durumu sorgusu (POST metodu ile)
         /// </summary>
         /// <param name="request">Hava durumu sorgu parametreleri</param>

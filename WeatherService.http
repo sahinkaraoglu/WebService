@@ -31,3 +31,15 @@ GET https://localhost:7001/api/weather/city/Istanbul?countryCode=tr&units=imperi
 
 ### 8. Farklı dil (İngilizce)
 GET https://localhost:7001/api/weather/city/London?countryCode=uk&units=metric&language=en
+
+### 9. Tüm şehirlerin bilgilerini getir
+GET https://localhost:7001/api/weather/cities
+
+### 10. Sayfalama ile şehir listesi
+GET https://localhost:7001/api/weather/cities?page=1&pageSize=10
+
+### 11. Ülke kodu ile filtreleme (Türkiye)
+GET https://localhost:7001/api/weather/cities?countryCode=TR
+
+### 12. Arama terimi ile filtreleme
+GET https://localhost:7001/api/weather/cities?searchTerm=istanbul
