@@ -1,0 +1,33 @@
+### Weather Service API Tests
+
+### 1. Şehir adına göre hava durumu - İstanbul
+GET https://localhost:7001/api/weather/city/Istanbul?countryCode=tr&units=metric&language=tr
+
+### 2. Şehir adına göre hava durumu - Ankara
+GET https://localhost:7001/api/weather/city/Ankara?countryCode=tr&units=metric&language=tr
+
+### 3. Şehir ID'sine göre hava durumu (İstanbul ID: 745044)
+GET https://localhost:7001/api/weather/cityid/745044?units=metric&language=tr
+
+### 4. Posta koduna göre hava durumu
+GET https://localhost:7001/api/weather/zip/34000?countryCode=tr&units=metric&language=tr
+
+### 5. Koordinatlara göre hava durumu (İstanbul koordinatları)
+GET https://localhost:7001/api/weather/coordinates?latitude=41.0082&longitude=28.9784&units=metric&language=tr
+
+### 6. Genel sorgu (POST)
+POST https://localhost:7001/api/weather/query
+Content-Type: application/json
+
+{
+  "city": "Istanbul",
+  "countryCode": "tr",
+  "units": "metric",
+  "language": "tr"
+}
+
+### 7. Farklı birim sistemi (Fahrenheit)
+GET https://localhost:7001/api/weather/city/Istanbul?countryCode=tr&units=imperial&language=en
+
+### 8. Farklı dil (İngilizce)
+GET https://localhost:7001/api/weather/city/London?countryCode=uk&units=metric&language=en
